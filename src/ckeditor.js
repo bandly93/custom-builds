@@ -59,17 +59,10 @@ Editor.builtinPlugins = [
 ];
 
 Editor.defaultConfig = {
-<<<<<<< HEAD
-	toolbar: [ 'heading', '|', 'bold', 'italic', 'image' ],
-
-	// This value must be kept in sync with the language defined in webpack.config.js.
-	language: 'en'
-=======
     toolbar: [ 'heading', '|', 'bold', 'italic', 'image' ],
 
     // This value must be kept in sync with the language defined in webpack.config.js.
     language: 'en'
->>>>>>> d9dc7b82c6edadc962721f6ec3d63e984ab55438
 };
 
 export default Editor;
