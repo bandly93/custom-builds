@@ -81,13 +81,13 @@ Editor.defaultConfig = {
 		]
 	},
 	image: {
-		toolbar: [
-			'imageStyle:full',
-			'imageStyle:side',
-			'|',
-			'imageTextAlternative'
-		],
-		resizeOptions: [
+            // Configure the available styles.
+            styles: [
+                'alignLeft', 'alignCenter', 'alignRight'
+            ],
+
+            // Configure the available image resize options.
+            resizeOptions: [
                 {
                     name: 'resizeImage:original',
                     label: 'Original',
@@ -104,7 +104,17 @@ Editor.defaultConfig = {
                     value: '75'
                 }
             ],
-	},
+
+            // You need to configure the image toolbar, too, so it shows the new style
+            // buttons as well as the resize buttons.
+            toolbar: [
+                'imageStyle:alignLeft', 'imageStyle:alignCenter', 'imageStyle:alignRight',
+                '|',
+                'resizeImage',
+                '|',
+                'imageTextAlternative'
+            ]
+        },
 	table: {
 		contentToolbar: [
 			'tableColumn',
